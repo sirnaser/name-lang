@@ -1,0 +1,13 @@
+increment :
+    {-var} : {{-var}}1
+
+if-var-equal-val : 
+    {-var}={{-var}} : {--else}
+    {-var}={-val} : {--then}
+    {{-var}={{-var}}}
+
+while-var-not-equal-val :
+    {-do}
+    else : {--while-var-not-equal-val}
+    then : # break
+    {-if-var-equal-val}
