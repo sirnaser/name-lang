@@ -77,7 +77,7 @@ There is no `if` keyword in `{name}`. Here is one, built entirely out of concat 
 ```
 main :
 
-if : 
+if-var-equal-val : 
     {-var}={{-var}} : {-else}
     {-var}={-val} : {-then}
     {{-var}={{-var}}}
@@ -90,7 +90,7 @@ else :
     output.file : hello to the user of name-lang :)
 then :
     output.file : hello to the creator of name-lang <3
-{if}
+{if-var-equal-val}
 
 main : {main}
 ```
